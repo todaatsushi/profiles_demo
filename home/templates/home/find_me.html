@@ -1,0 +1,11 @@
+{% extends 'home/base.html' %}
+
+
+{% block content %}
+    <h1>I think I've found you!</h1>
+    <ul>
+        <li>Latitude/Longitude: {{ lat_long }}</li>
+        <li>Address: {{ full_info.address}}</li>
+        <li>IP: {{ full_info.ip}}</li>
+    </ul>
+{% endblock %}
