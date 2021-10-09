@@ -6,11 +6,6 @@
         entry: black
         language: system
         types: [python]
-      - id: flake8
-        name: "Flake8: Checking code quality"
-        entry: flake8
-        language: system
-        types: [python]
       - id: isort
         name: "Isort: Checking imports sorting"
         entry: isort
