@@ -7,6 +7,7 @@ authors = ["Atsushi Toda <todaatsushi0@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 Django = "^3.2.8"
+pre-commit = "^2.15.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
