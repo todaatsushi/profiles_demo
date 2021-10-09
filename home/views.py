@@ -1,9 +1,12 @@
 from django.shortcuts import render
+from django.utils.timezone import now
 
 
 def home(request):
-    return render(request, "home/home.html")
+    name = "Amane"
+    return render(request, "home/home.html", {"name": name})
 
 
 def about_project(request):
-    return render(request, "home/about_project.html")
+    today_date = now()
+    return render(request, "home/about_project.html", {"today_date": today_date})
