@@ -3,7 +3,7 @@
     hooks:
       - id: black
         name: "Black: Checking code style"
-        entry: black --check
+        entry: black
         language: system
         types: [python]
       - id: flake8
@@ -13,6 +13,6 @@
         types: [python]
       - id: isort
         name: "Isort: Checking imports sorting"
-        entry: isort --check-only
+        entry: isort
         language: system
         types: [python]
