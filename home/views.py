@@ -2,10 +2,12 @@ from django.shortcuts import render
 from django.utils.timezone import now
 from geocoder import ip
 
+from users.models import UserProfile
+
 
 def home(request):
-    name = "Amane"
-    return render(request, "home/home.html", {"name": name})
+    user_profile = UserProfile.objects.filter(user=request.user).get()
+    return render(request, "home/home.html", {"name": user_profile.name})
 
 
 def about_project(request):
